@@ -60,7 +60,7 @@ def main():
         exit(1)
 
     mtu = find_mtu(host)
-    print(f'MTU = {mtu}')
+    print(f'MTU = {mtu + 28}')
 
 if __name__ == '__main__':
     main()
