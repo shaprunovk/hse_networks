@@ -154,7 +154,7 @@ config terminal
 
 (config)#access-list 100 permit ip 10.0.10.0 0.0.0.255 any
 (config)#access-list 100 permit ip 10.0.20.0 0.0.0.255 any
-(config)#ip nat inside source list 100 pool POOL
+(config)#ip nat inside source list 100 int e0/2 overload
 (config)#exit
 write
 ```

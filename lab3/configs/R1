@@ -130,7 +130,7 @@ ip forward-protocol nd
 !
 no ip http server
 no ip http secure-server
-ip nat inside source list 100 pool pool
+ip nat inside source list 100 int e0/2 overload
 !
 ipv6 ioam timestamp
 !
